@@ -1,0 +1,422 @@
+* {
+  margin: 0;
+  padding: 0;
+  
+}
+
+/* fixes horizontal scroll */
+html,body
+{
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+body {
+  overflow: hidden;
+}
+header {
+  position: absolute;
+  z-index: 10;
+  width: 100%;  
+}
+
+nav  {
+  position: fixed;
+}
+.navbar-toggler {
+  border: 3px solid #6495ED !important; 
+  border-radius: 10px;
+}
+
+.navbar-toggler:hover {
+  border-color: 3px solid #003366 !important;
+  border-radius: 10px;
+}
+.navbar {
+  float: left; 
+  border-bottom: 2px solid #6495ED;
+}
+
+
+.nav-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 3px;
+    transition: width .3s;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+    //transition: width .3s;
+}
+
+.nav-link {
+  color: white;
+  text-shadow: 1px 1px #6495ED;
+}
+
+
+.nav-item {
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 18px;
+  color: white;
+  text-shadow: #6495ED;
+}
+
+
+
+.mdp6 {
+  font-size: 40px;
+  color: #6495ED;
+  padding: 2px;
+  text-shadow: 1px 1px black;
+}
+
+
+/*
+.mdp {
+  border-top: 3px solid #009f75;
+  border-bottom: 3px solid #009f75;
+  font-weight: bold;
+  font-color: red;
+}
+*/
+
+/*banner section */
+.banner_header {
+  font-family: Oswald;
+  color: white;
+  text-shadow: gray;
+  font-size: 40px;
+  margin-left: 40px;
+}
+
+.banner_main {
+  font-family: Cardo;
+  font-weight: bold;
+  color: white;
+  margin-left: 40px;
+}
+.banner {
+  
+  background: url("https://res.cloudinary.com/marpenncloud/image/upload/v1562815510/laptop-2593016_1920_pf1ilp.jpg");
+  min-height: 100vh;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  padding: 250px 0 200px;
+  
+}
+
+.btnD1 {
+  display: inline-block;
+  margin-left: 40px;
+  margin-top: 8px;
+  background: #FFF;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  border: none;
+  font-weight: 800;
+  color: #6495ED;
+}
+
+.btnD1:hover {
+  color: #003366;
+  text-decoration: none;
+}
+
+.navbar-light .navbar-toggler {
+  border: 2px solid black;
+  border-radius: 0;
+  
+ 
+}
+
+.about {
+  background: url("https://res.cloudinary.com/marpenncloud/image/upload/v1561574186/notebook-1280538_1280_ayzeaf.jpg");
+  min-height: 200vh;
+  background-attachment:      fixed;
+  background-size: cover;
+  background-position: center;
+  padding: 250px 0 200px;
+  border-top: 2px solid black;
+}
+
+.top {
+  margin-top: -100px;
+}
+
+.white-text {
+  color: white;
+  font-family: Cardo;
+}
+
+
+
+.about_header {
+  color: #009f75;
+  text-shadow: 2px 2px black;
+  font-family: Oswald;
+}
+.bottom {
+  top: -200px;
+}
+
+/* portfolio section */
+
+
+.port-head-2 {
+  margin-left: 42%;
+  color: #009f75;
+  font-weight: bold;
+  padding-top: 15px;
+  text-transform: uppercase;
+  text-shadow: 2px 2px black;
+  font-family: Oswald;
+}
+
+
+
+
+
+ .image {
+    display: block;
+    border: 0;
+    width: 100%;
+    height: auto;
+}
+
+/***************************           Cards            *******************************/
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* see notes below */
+  grid-auto-rows: minmax(200px, auto);
+  grid-gap: 1rem;
+}
+
+.card {
+  /*height: 200px;*/
+  /*background: red;*/
+  border: 2px solid #e7e7e7;
+  border-radius: 4px;
+  padding: .5rem;
+  -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.15);
+  display: flex;
+  /* -webkit-box-orient: vertical; */
+  /* -webkit-box-direction: normal; */
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: relative;
+  color: #5d5e5e;
+} /* li item */
+
+.thumbnail img {
+  fill: #c7c4c4;
+  height: 135px;
+  opacity: .25;
+  padding: 1.5rem;
+}
+
+.card-content {
+    font-size: .75rem;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+}
+
+.panel.card-panel .panel-header {
+    background-color: #ffffff;
+    font-size: .75rem;
+    font-weight: 400;
+    height: 25px !important;
+}
+
+.panel.card-panel .panel-content {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.category {
+  font-size: .75rem;
+  text-transform: uppercase;
+}
+
+
+.card-link:hover {
+  border: 2px solid black
+}
+
+
+
+
+.footer-sect {
+  border-top: 2px solid #e7e7e7;
+  margin: .5rem 0 0;
+  min-height: 30px;
+  font-size: .5rem;
+}
+
+.category {
+    position: absolute;
+    top: 110px;
+    left: 0;
+    color: #fff;
+    background: #e74c3c;
+    padding: 10px 15px;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.category__01 {
+  background-color: #50c6db;
+}
+
+.category__02 {
+  background-color: #5d5e5e;
+}
+
+.category__03 {
+  background-color: #51bb7b;
+}
+
+.category__04 {
+  background-color: #f47820;
+}
+
+.category__05 {
+  background-color: #8350a0;
+}
+
+.post-meta {
+  margin-top: .5rem;
+}
+
+.comments {
+  margin-left: .5rem;
+}
+
+/* connect secton */
+
+.connect {
+  background: url("https://res.cloudinary.com/marpenncloud/image/upload/v1564710378/glasses-2947708_1280_nc4mie.jpg");
+  min-height: 50vh;
+  background-size: cover;
+  background-position: center;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+}
+
+.connect-head {
+  text-align: center;
+  color: #009f75;
+  text-shadow: 2px 2px black;
+  padding-top: 15px;
+  text-transform: uppercase; 
+  font-family: Oswald;
+}
+
+
+.column {
+  width: 16%;
+  padding: 5px;
+  border: 5px solid transparent;
+  margin-right: 10px; 
+  margin-bottom: 30px;
+}
+
+.card-info {
+  margin-top: 20px;
+}
+  
+.column:hover {
+  border: 5px solid #009f75;
+  border-radius: 10px;
+}
+
+.connect-row {
+  display: flex;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 700px) {
+  .connect-row {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+}
+/* Clear floats after image containers */
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+@media only screen and (max-width: 900px) {
+  .card {
+    width: 80%; 
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .card {
+    width: 80%; 
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 10%;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  #allCards {
+    margin-left: 100px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .port-head {
+     margin-left: 34%;
+ }
+}
+@media only screen and (max-width: 700px) {
+  .port-head {
+    margin-left: 33%;
+  }
+}
+
+/* footer section */
+
+
+
+.email {
+  padding: 10px;
+}
+
+.copyright {
+  font-weight: bold;
+  text-align: center;
+  font-size: 22px;
+  margin-top: -22px;
+  min-height: 80px;
+  
+  
+}
